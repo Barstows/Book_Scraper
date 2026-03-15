@@ -98,10 +98,3 @@ O script segue três etapas bem definidas:
 2. **Extração** — `scrape_product()` acessa cada página individual e faz o parse dos campos desejados via seletores CSS.
 
 3. **Saída** — `main.py` orquestra a execução, recebe argumentos via CLI e persiste o resultado em JSON formatado.
-
-Boas práticas adotadas:
-- Separação entre lógica de scraping (`src/scraper.py`) e orquestração (`main.py`)
-- Pausas entre requisições para não sobrecarregar o servidor
-- Retentativas automáticas em caso de falha de rede
-- Logging estruturado para acompanhar o progresso
-- Argumentos CLI para flexibilidade de execução
